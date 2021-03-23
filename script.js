@@ -16,7 +16,7 @@ const projects = {
         I enjoyed building this, especially the second to last section, which is a testimonials carousel that moves on its own.<br><br>\
         Given the nature of the industry, the page might not look like that anymore, as the test code usually runs for only a few months, below is a screenshot of the full page.",
         tech: ['HTML', 'CSS', 'Javascript', 'jQuery'],
-        images: ['/media/cms.png'],
+        images: ['media/cms.png'],
         ctas: [
             {text: 'View Page', url: 'https://www.companiesmadesimple.com/company-formation-name-search.html'}
         ]
@@ -26,7 +26,7 @@ const projects = {
         para: "I developed the first 3 areas of the 'domain names' page for Tsohost, the hero, and the 2 sections below it. I liked seeing this going live as it's such a nice and clean design for people to enjoy.<br><br>\
         Given the nature of the industry, the page might not look like that anymore, as the test code usually runs for only a few months, below is a screenshot of the full page.",
         tech: ['HTML', 'CSS', 'Javascript', 'jQuery'],
-        images: ['/media/tso.png'],
+        images: ['media/tso.png'],
         ctas: [
             {text: 'View Page', url: 'https://www.tsohost.com/domain-names'}
         ]
@@ -36,7 +36,7 @@ const projects = {
         para: "This build was about re-designing some components on the Heartinternet home page. I liked working on the 3 cards section, as I think it gives some equilibrium between the hero and the other segments.<br><br>\
         Given the nature of the industry, the page might not look like that anymore, as the test code usually runs for only a few months, below is a screenshot of the full page.",
         tech: ['HTML', 'CSS', 'Javascript', 'jQuery'],
-        images: ['/media/heart.png'],
+        images: ['media/heart.png'],
         ctas: [
             {text: 'View Page', url: 'https://www.heartinternet.uk/'}
         ]
@@ -45,7 +45,7 @@ const projects = {
         title: 'List Pagination',
         para: 'A webpage that filters a list of students and provides pagination links. Each page displays 10 students, you can also filter by name using the search box on the top right corner of the page.',
         tech: ['HTML', 'CSS', 'Javascript'],
-        images: ['/media/list_pagination_and_filtering_1.png', '/media/list_pagination_and_filtering_2.png', '/media/list_pagination_and_filtering_3.png'],
+        images: ['media/list_pagination_and_filtering_1.png', 'media/list_pagination_and_filtering_2.png', 'media/list_pagination_and_filtering_3.png'],
         ctas: [
             {text: 'Live Demo', url: 'https://joemessi.github.io/list_pagination_and_filtering/'},
             {text: 'GitHub Repo', url: 'https://github.com/JoeMessi/list_pagination_and_filtering'}
@@ -55,7 +55,7 @@ const projects = {
         title: 'SQL library manager',
         para: 'A web application for listing, adding, updating, and deleting books in a library application. Download the GitHub repo and follow the instructions in the README file to view the project.',
         tech: ['Javascript', 'Node.js', 'Express', 'Pug', 'Sequelize'],
-        images: ['/media/sql-library-manager_1.png', '/media/sql-library-manager_2.png', '/media/sql-library-manager_3.png'],
+        images: ['media/sql-library-manager_1.png', 'media/sql-library-manager_2.png', 'media/sql-library-manager_3.png'],
         ctas: [
             {text: 'GitHub Repo', url: 'https://github.com/JoeMessi/sql_library_manager'}
         ]
@@ -64,7 +64,7 @@ const projects = {
         title: 'Public API request',
         para: 'An app for a fictional company called "Awesome Startup". It includes working with public APIs, making API requests, and asynchronously handling the data that is returned from the requests.',
         tech: ['HTML', 'CSS', 'Javascript', 'Ajax'],
-        images: ['/media/public_api_request_1.png', '/media/public_api_request_2.png', '/media/public_api_request_3.png'],
+        images: ['media/public_api_request_1.png', 'media/public_api_request_2.png', 'media/public_api_request_3.png'],
         ctas: [
             {text: 'Live Demo', url: 'https://joemessi.github.io/public_api_request/'},
             {text: 'GitHub Repo', url: 'https://github.com/JoeMessi/public_api_request'}
@@ -74,7 +74,7 @@ const projects = {
         title: 'OOP game',
         para: 'A browser-based, word guessing game built with JavaScript following OOP (Object-Oriented Programming) principles.',
         tech: ['HTML', 'CSS', 'Javascript', 'OOP'],
-        images: ['/media/oop_game_1.png', '/media/oop_game_2.png', '/media/oop_game_3.png'],
+        images: ['media/oop_game_1.png', 'media/oop_game_2.png', 'media/oop_game_3.png'],
         ctas: [
             {text: 'Live Demo', url: 'https://joemessi.github.io/oop_game/'},
             {text: 'GitHub Repo', url: 'https://github.com/JoeMessi/oop_game'}
@@ -84,7 +84,7 @@ const projects = {
         title: 'React gallery app',
         para: 'A gallery app built with React that asynchronously fetches and displays data from the famous photo hosting site Flickr.',
         tech: ['HTML', 'CSS', 'Javascript', 'React'],
-        images: ['/media/react-gallery-app_1.png', '/media/react-gallery-app_2.png', '/media/react-gallery-app_3.png'],
+        images: ['media/react-gallery-app_1.png', 'media/react-gallery-app_2.png', 'media/react-gallery-app_3.png'],
         ctas: [
             {text: 'Live Demo', url: 'https://joemessy-react-gallery-app.netlify.app/cats'},
             {text: 'GitHub Repo', url: 'https://github.com/JoeMessi/react-gallery-app'}
@@ -94,7 +94,7 @@ const projects = {
         title: 'Interactive form',
         para: 'A webpage for an interactive registration form for a fictional conference called "FullStack Conf".',
         tech: ['HTML', 'CSS', 'Javascript', 'jQuery'],
-        images: ['/media/interactive_form_1.png', '/media/interactive_form_2.png', '/media/interactive_form_3.png'],
+        images: ['media/interactive_form_1.png', 'media/interactive_form_2.png', 'media/interactive_form_3.png'],
         ctas: [
             {text: 'Live Demo', url: 'https://joemessi.github.io/interactive-form/'},
             {text: 'GitHub Repo', url: 'https://github.com/JoeMessi/interactive-form'}
@@ -104,7 +104,7 @@ const projects = {
         title: 'React and a REST API App',
         para: 'A full-stack JavaScript application that allows users to view a list of courses and the detail for a specific course, sign up to create an account or sign in with an existing account, and create, update, or delete courses. Download the GitHub repo and follow the instructions in the README file to view the project.',
         tech: ['React', 'Javascript', 'Node.js', 'Express', 'Sequelize'],
-        images: ['/media/app-with-react-and-rest-api_1.png', '/media/app-with-react-and-rest-api_2.png', '/media/app-with-react-and-rest-api_3.png'],
+        images: ['media/app-with-react-and-rest-api_1.png', 'media/app-with-react-and-rest-api_2.png', 'media/app-with-react-and-rest-api_3.png'],
         ctas: [
             {text: 'GitHub Repo', url: 'https://github.com/JoeMessi/full_stack_app_with_react_and_a_rest_api'}
         ]
