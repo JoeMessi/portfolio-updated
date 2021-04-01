@@ -198,6 +198,7 @@ body.addEventListener('mouseout', (e) => {
 function drawProject(proj) {
     // clear 
     document.querySelector('.total-overlay-work .inner .screenshots-box').innerHTML = '';
+    document.querySelector('.total-overlay-work .inner').scroll(0,0);
     // populate
     document.querySelector('.total-overlay-work .inner .text h3.title').textContent = proj.title;
     document.querySelector('.total-overlay-work .inner .text p.desc').innerHTML = proj.para;
