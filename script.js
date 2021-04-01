@@ -168,7 +168,12 @@ body.addEventListener('mouseover', (e) => {
             borderLeft.classList.add('expand-leftB');
             elem.parentNode.classList.add('opening');
         }
+        else if(elem.parentNode.classList.contains('open')) {
+            // little animation on hover closing X menu
+            // add ca class 
+        }
     }
+
     // brings 1 gallery item above the others
     else if(elem.className.match(/proj-hoverlay|hover-overlay/) ) {
        zIndexHoverGallery(studentGallery, elem);
@@ -222,3 +227,8 @@ function zIndexHoverGallery(group, elem) {
     elem.parentNode.classList.remove('below');
     elem.parentNode.classList.add('above'); 
 }
+
+// loading images beforehand
+let imagesHtml = '';
+for(p in projects) {projects[p].images.forEach(uri => imagesHtml += `<img src=${uri}>`);}
+document.querySelector('.images-loader').innerHTML = imagesHtml;

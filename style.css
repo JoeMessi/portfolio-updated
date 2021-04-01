@@ -19,7 +19,7 @@ body {
     position: relative;
     font-family: 'Poppins', sans-serif;
     color: #231f20;
-    font-size: 1.2rem;
+    font-size: 1.16rem;
     height: 100%;
     overflow-x: hidden;
 }
@@ -78,7 +78,7 @@ body {
 }
 .total-overlay-work .inner .text {
     width: 70%;
-    margin: 4rem auto 2rem auto;
+    margin: 4rem auto 1rem auto;
     text-align: justify;
 }
 .total-overlay-work .inner .text h4 {
@@ -129,6 +129,11 @@ body {
     z-index: 1;
     position: fixed;
     top: 0;
+}
+p.desc {
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #00000024;
+    padding-bottom: 2rem;
 }
 
 /* ::::::: MENU :::::::  */
@@ -205,6 +210,13 @@ body {
     white-space: break-spaces;
     font-size: 1.1rem;
 }
+p.email {
+    -webkit-transition: color  cubic-bezier(0.7, 0, 0.3, 1) 300ms;
+    transition: color  cubic-bezier(0.7, 0, 0.3, 1) 300ms;
+}
+p.email:hover {
+    color: #0000006b;
+}
 .contact-icon-box {
     display: flex;
     justify-content: space-between;
@@ -231,7 +243,7 @@ body {
     position: relative;
 }
 .links-box a {
-    display: block;
+    display: inline-block;
 }
 .links-box a span {
     position: relative;
@@ -790,6 +802,11 @@ section.say-hi .contact-details p {
     margin: 2% 0;
 }
 
+/* ::::::: load images into div :::::::  */
+.images-loader {
+    display: none;
+}
+
 /* :::::::::::::::::::::::::: MEDIA QUERIES ::::::::::::::::::::::::::  */
 @media (max-height: 540px) {
     .contain-other {
@@ -958,9 +975,6 @@ section.say-hi .contact-details p {
     .up-to-icon {
         bottom: 7rem;
         left: 6.8rem;
-    }
-    .total-overlay-work .inner p {
-        font-size: 1.1rem;
     }
     .total-overlay-work .inner h4 {
         font-size: 1.3rem;
@@ -1189,7 +1203,7 @@ section.say-hi .contact-details p {
 }
 @media (max-width: 475px) {
     body {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     section.quote .heading p {
         font-size: 1.3rem;
