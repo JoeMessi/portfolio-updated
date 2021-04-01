@@ -152,7 +152,7 @@ body.addEventListener('click', (e) => {
         drawProject(projects[projName]);
     }
     // close overlay project
-    else if(elem.parentNode.classList.contains('close') || elem.classList.contains('total-overlay-work') ) {
+    else if(elem.classList.contains('overlay-close-prj') || elem.classList.contains('total-overlay-work') ) {
         body.classList.remove('overF-hidden');
         bigOverlay.classList.remove('show-overlay');
     }

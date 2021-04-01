@@ -56,14 +56,31 @@ body {
     top: 0;
     right: 0;
 }
-.total-overlay-work .inner .close span {
-    font-size: 3rem;
-    text-align: end;
-    margin-right: 2rem;
-    transform: rotate(45deg); 
+.total-overlay-work .inner .close > span {
     position: absolute;
-    right: 0;
+    right: 2.5rem;
+    top: 1.5rem;
+}
+.overlay-close-prj {
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    top: -7px;
+    z-index: 1;
     cursor: pointer;
+}
+.total-overlay-work .inner .close > span span {
+    width: 25px;
+    height: 4px;
+    background: #231f20;
+    position: absolute;
+    border-radius: 10px;
+}
+.total-overlay-work .inner .close > span span:nth-of-type(1) {
+    transform: rotate( 45deg);
+}
+.total-overlay-work .inner .close > span span:nth-of-type(2) {
+    transform: rotate(-45deg);
 }
 .total-overlay-work .inner .img-outer {
     display: flex;
@@ -816,6 +833,80 @@ section.say-hi .contact-details p {
         display: none;
     }
 }
+@media (max-height: 700px) {
+    .menu div.contact-details p {
+        font-size: 1rem;
+    }
+    .contain .menu-icon.icon {
+        width: 14rem;
+    }
+    .menu div.links-box {
+        font-size: 2.2rem;
+    }
+    .hamburger > span {
+        height: 4px;
+    }
+    .hamburger > span:nth-of-type(1) {
+        top: 0;
+        width: 2rem;
+    }
+    .hamburger > span:nth-of-type(2) {
+        top: 8px;
+        width: 2.7rem;
+    }
+    .hamburger > span:nth-of-type(3) {
+        top: 16px;
+        width: 1.5rem;
+    }
+    .hamburger.opening > span:nth-of-type(1) {
+        width: 3.1rem;
+    }
+    .hamburger.opening > span:nth-of-type(2) {
+        width: 4rem;
+    }
+    .hamburger.opening > span:nth-of-type(3) {
+        width: 2.6rem;
+    }
+    .hamburger.open > span:nth-of-type(1) {
+        width: 2.1rem;
+    }
+    .hamburger.open > span:nth-of-type(2) {
+        width: 0rem;
+        opacity: 0;
+    }
+    .hamburger.open > span:nth-of-type(3) {
+        width: 2.1rem;
+    }
+    .border.left.expand-leftB {
+        max-width: 4rem;
+        width: 4rem;
+    }
+    .hamburger {
+        left: 0.9rem;
+    }
+    .border.top, .border.bottom {
+        height: 2rem;
+    }
+    .border.right, .border.left {
+        width: 2rem;
+    }
+    .content-box {
+        margin-top: 2rem;
+        padding: 0;
+    }
+    header {
+        height: calc(100vh - 4rem);
+    }
+    .menu {
+        margin-top: 1rem;
+    }
+    .hamburger.mobile {
+        left: 2rem;
+    }
+    .border.top h1 {
+        margin-right: 2rem;
+    }
+}
 @media (min-width: 1645px) {
     .img-box .hover-overlay p {
         font-size: 1.5rem;
@@ -963,9 +1054,6 @@ section.say-hi .contact-details p {
     section.quote {
         padding-left: 5rem;
         padding-right: 5rem;
-    }
-    .total-overlay-work .inner .close span {
-        margin-right: 1rem;
     }
 }
 @media (max-width: 850px) {
@@ -1133,11 +1221,12 @@ section.say-hi .contact-details p {
     .total-overlay-work .inner {
         width: 90%;
     }
-    .total-overlay-work .inner .close span {
-        margin-right: 0.5rem;
-        font-size: 2.5rem;
+    .total-overlay-work .inner .close > span span {
+        width: 22px;
     }
-
+    .total-overlay-work .inner .close > span {
+        right: 1.8rem;
+    }
 }
 @media (max-width: 650px) {
     section.say-hi {
@@ -1183,10 +1272,6 @@ section.say-hi .contact-details p {
     .border.top h1 {
         font-size: 0.9rem;
     }
-    .total-overlay-work .inner .close span {
-        margin-right: 0.2rem;
-        top: -6px;
-    }
 }
 @media (max-width: 500px) {
     section.quote {
@@ -1199,6 +1284,12 @@ section.say-hi .contact-details p {
     }
     section.quote .heading p img.quote-mark.right {
         display: none;
+    }
+    .total-overlay-work .inner .close > span {
+        right: 1.6rem;
+    }
+    .total-overlay-work .inner .close > span span {
+        width: 20px;
     }
 }
 @media (max-width: 475px) {
@@ -1215,6 +1306,9 @@ section.say-hi .contact-details p {
 @media (max-width: 430px) {
     .border.top h1 {
        display: none;
+    }
+    .total-overlay-work .inner .close > span {
+        right: 1.4rem;
     }
 }
 @media (max-width: 400px) {
@@ -1292,6 +1386,12 @@ section.say-hi .contact-details p {
     }
     section.about > div.left {
         margin: 3rem 0;
+    }
+    .total-overlay-work .inner .close > span {
+        right: 1.4rem;
+    }
+    .total-overlay-work .inner .close {
+        position: relative;
     }
 }
 @media (max-width: 338px) {
