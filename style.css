@@ -908,9 +908,15 @@ section.say-hi .contact-details p {
         margin-right: 2rem;
     }
 }
-@media (min-width: 1645px) {
+@media (min-width: 1600px) {
     .img-box .hover-overlay p {
         font-size: 1.5rem;
+    }
+    section {
+        padding: 0 8rem;
+    }
+    section.about > div.left {
+        padding: 0 8rem;
     }
 }
 @media (max-width: 1424px) {
